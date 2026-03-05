@@ -1,19 +1,20 @@
-﻿JARVIS 폴더 구조 (생성: 2026-03-05 12:10)
-================================
-  src
-  .env
-  agent.py
-  index.html
-  metadata.json
-  package-lock.json
-  package.json
-  README.md
-  server.js
-  start_jarvis.bat
-  tsconfig.json
-  vite.config.ts
-    lib
-    App.tsx
-    index.css
-    main.tsx
-      utils.ts
+﻿jarvis/
+├── jarvis-core/
+│   ├── llm/
+│   │   └── gemini.js
+│   └── memory/
+│       └── manager.js
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── App.tsx
+│   └── main.tsx
+├── dist/ (Build output)
+├── chats/ (SQLite Databases)
+├── server.js (Node.js Master Server)
+├── agent.py (Python System Agent)
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── README.md
+└── start_jarvis.bat
