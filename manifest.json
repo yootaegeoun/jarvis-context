@@ -1,0 +1,31 @@
+﻿{
+    "version":  "2.3.0",
+    "run":  {
+                "server":  "node server.js (port 3003)",
+                "dev":  "npm run dev (port 3000)"
+            },
+    "project":  "JARVIS",
+    "entrypoints":  {
+                        "config":  "vite.config.ts",
+                        "backend":  "server.js",
+                        "frontend":  "src/App.tsx",
+                        "agent":  "agent.py"
+                    },
+    "description":  "보스의 전용 AI 비서 및 실행 에이전트 시스템",
+    "stack":  {
+                  "ai":  "Google Gemini 3.1 Pro",
+                  "backend":  "Node.js Express (ES Module) + Python Agent",
+                  "port":  3003,
+                  "frontend":  "React 19 + Vite 6 + TypeScript + TailwindCSS v4"
+              },
+    "features":  [
+                     "Gemini AI 채팅 (마크다운 렌더링)",
+                     "음성 인식 / TTS",
+                     "카메라 화면 캡처 후 AI 분석",
+                     "파일 첨부 분석 (이미지/ZIP/텍스트)",
+                     "PC 에이전트 제어 (launch_app 등)",
+                     "실시간 시스템 리소스 모니터링",
+                     "중앙 금고 연동 (D:/My_project/Vault/.env)"
+                 ],
+    "domain":  "jarvis.taeguni.com"
+}
